@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .artical {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .allBox {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3px;
+        }
+
+        .box {
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator input {
+            width: 96%;
+            height: 50px;
+            text-align: right;
+            font-size: 18px;
+            font: bold;
+        }
+
+        body h1 {
+            text-align: center;
+        }
+
+        .defn {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="artical">
+        <div class="container">
+            <div class="calculator">
+                <input type="text">
+                <div class="allBox">
+                    <div class="box">c</div>
+                    <div class="box">+/-</div>
+                    <div class="box">%</div>
+                    <div class="box defn">/</div>
+                    <div class="box">7</div>
+                    <div class="box">8</div>
+                    <div class="box">9</div>
+                    <div class="box defn">*</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                    <div class="box defn">.</div>
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box defn">3</div>
+                    <div class="box defn">.</div>
+                    <div class="box">0</div>
+                    <div class="box">.</div>
+                    <div class="box">Del</div>
+                    <div class="box">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
