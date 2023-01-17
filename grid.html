@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <!-- <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* gap: 20px; */
+        }
+
+        #head {
+            grid-column: 1/-1;
+            background-color: aqua;
+        }
+
+        #nav {
+            background-color: blue;
+        }
+
+        #mnu {
+            background-color: blueviolet;
+        }
+
+        #aside {
+            background-color: cornflowerblue;
+        }
+
+        #footer {
+            grid-column: 1/-1;
+        }
+
+        .box {
+            background-color: cadetblue;
+            height: 100px;
+        }
+    </style> -->
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "h h h h h h h h h h h h"
+                "n n n m m m m m m m a a"
+                "f f f f f f f f f f f f"
+            ;
+            height: 100%;
+        }
+
+        #head {
+            grid-area: h;
+            background-color: aquamarine;
+        }
+
+        #nav {
+            grid-area: n;
+            background-color: burlywood;
+        }
+
+        #mnu {
+            grid-area: m;
+            background-color: lightpink;
+        }
+
+        #aside {
+            grid-area: a;
+            background-color: lightslategray;
+        }
+
+        #footer {
+            grid-area: f;
+            background-color: blueviolet;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-areas:
+                    "h h h h h h h h h h h h"
+                    "n n n n n n n n n n n n"
+                    "m m m m m m m m m m m m"
+                    "a a a a a a a a a a a a"
+                    "f f f f f f f f f f f f"
+                ;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="head">head</div>
+        <div class="box" id="nav">Nav</div>
+        <div class="box" id="mnu">Mnu</div>
+        <div class="box" id="aside">Aside</div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+
+</html>
